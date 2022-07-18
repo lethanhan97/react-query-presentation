@@ -7,9 +7,9 @@ export const Intro = () => {
       </section>
       <section>
         <h2>What is React-Query?</h2>
-        <p>
-          A library that simplifies the way we fetch, cache and sync data from a
-          server
+        <p className="fragment fade-in-then-semi-out">
+          A library that simplifies the way we fetch, cache, sync data from a
+          server and updating server states
         </p>
       </section>
     </>
