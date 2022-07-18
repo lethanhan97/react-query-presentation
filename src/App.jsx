@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Slides />
-      {/* TODO: Add app */}
+      <div>TODO: Add presentation</div>
     </div>
   );
 }
