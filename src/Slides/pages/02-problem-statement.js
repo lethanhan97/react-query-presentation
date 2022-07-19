@@ -16,7 +16,8 @@ export const ProblemStatement = () => {
           </li>
           <li className="fragment fade-in">
             Store and manage server states on the client, leading to{' '}
-            <mark>bloated</mark> redux states
+            <span className="fragment highlight-green">bloated</span> redux
+            states
           </li>
         </ul>
       </section>

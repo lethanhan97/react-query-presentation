@@ -7,8 +7,5 @@ import 'reveal.js/dist/theme/black.css';
 import 'reveal.js/plugin/highlight/monokai.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Removing safe mode to allow hljs to do code highlighting and injecting HTML
+root.render(<App />);
