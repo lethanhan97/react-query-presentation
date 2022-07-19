@@ -1,12 +1,16 @@
 import './App.css';
 import Slides from './Slides';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Demos from './Demos';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Slides />
-      <div>TODO: Add coding demo</div>
-    </div>
+      <div style={{ padding: '1rem' }}>
+        <Demos />
+      </div>
+    </Router>
   );
 }
 
