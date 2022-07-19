@@ -12,7 +12,7 @@ export const Solution = () => {
         <p>Today we will go through</p>
         <ul>
           <li className="fragment fade-in">Basic usage API</li>
-          <li className="fragment fade-in">Inifinite loading feature</li>
+          <li className="fragment fade-in">In-build pagination support</li>
           <li className="fragment fade-in">Caching</li>
           <li className="fragment fade-in">Optimistic Update</li>
           <li className="fragment fade-in">Dev Tools</li>

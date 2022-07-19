@@ -1,6 +1,7 @@
 import Basic from './Basic';
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
+import Pagination from './Pagination';
 
 const DemoPages = [
   {
@@ -12,6 +13,11 @@ const DemoPages = [
     route: '/basic',
     navDisplay: 'Basic',
     Component: Basic,
+  },
+  {
+    route: '/pagination',
+    navDisplay: 'Pagination',
+    Component: Pagination,
   },
 ];
 
