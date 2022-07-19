@@ -2,6 +2,7 @@ import Basic from './Basic';
 import { Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
 import Pagination from './Pagination';
+import Caching from './Caching';
 
 const DemoPages = [
   {
@@ -18,6 +19,11 @@ const DemoPages = [
     route: '/pagination',
     navDisplay: 'Pagination',
     Component: Pagination,
+  },
+  {
+    route: '/caching',
+    navDisplay: 'Caching',
+    Component: Caching,
   },
 ];
 
