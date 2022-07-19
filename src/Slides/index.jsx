@@ -6,7 +6,7 @@ import RevealSearch from 'reveal.js/plugin/search/search.esm.js';
 import RevealHighlight from 'reveal.js/plugin/highlight/highlight.esm.js';
 import RevealNotes from 'reveal.js/plugin/notes/notes.esm.js';
 
-import * as Pages from './pages';
+import Pages from './pages';
 
 const Slides = () => {
   useEffect(() => {
@@ -31,7 +31,7 @@ const Slides = () => {
   return (
     <div className="reveal">
       <div className="slides">
-        {Object.entries(Pages).map(([name, Component]) => (
+        {Pages.map(({ name, Component }) => (
           <Component key={name} />
         ))}
       </div>
