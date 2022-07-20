@@ -4,6 +4,7 @@ import { ProblemStatement } from './02-problem-statement';
 import { Solution } from './03-solution';
 import { Pagination } from './05-pagination';
 import { Caching } from './06-caching';
+import { OtherFeatures } from './07-other-features';
 
 const Pages = [
   {
@@ -29,6 +30,10 @@ const Pages = [
   {
     name: 'Caching',
     Component: Caching,
+  },
+  {
+    name: 'OtherFeatures',
+    Component: OtherFeatures,
   },
 ];
 
