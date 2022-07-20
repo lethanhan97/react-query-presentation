@@ -4,13 +4,35 @@ export const Caching = () => {
       <section>
         <h2>Caching</h2>
       </section>
-      <section data-auto-animate>
+      <section>
+        <p>
+          React-query will fetch data from its cache until the data becomes{' '}
+          <span className="fragment highlight-green">stale</span>
+        </p>
+      </section>
+      <section>
+        <p>Staleness</p>
+        <ul>
+          <li className="fragment fade-in">
+            A state to determine whether the data is outdated or not
+          </li>
+          <li className="fragment fade-in">
+            Can be configured by <code>staleTime</code> config when setting up{' '}
+            <code>react-query</code>
+          </li>
+          <li className="fragment fade-in">
+            Data can be manually marked as stale as well (usually when making
+            mutations)
+          </li>
+        </ul>
+      </section>
+      {/* <section data-auto-animate>
         <pre data-id="code-animation">
           <code className="hljs" data-trim data-line-numbers="|12-14|16|2">
             <script type="text/template">{``}</script>
           </code>
         </pre>
-      </section>
+      </section> */}
     </>
   );
 };

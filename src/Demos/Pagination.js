@@ -1,10 +1,5 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
-
-const fetchPokemon = ({
-  pageParam = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=10',
-}) => {
-  return fetch(pageParam).then((req) => req.json());
-};
+import { fetchPokemon } from './api';
 
 const Pagination = () => {
   const {
@@ -16,6 +11,7 @@ const Pagination = () => {
     isFetchingNextPage,
   } = useInfiniteQuery(['pokemon'], fetchPokemon, {
     getNextPageParam: (lastPageResponse) => lastPageResponse.next,
+    staleTime: 1000 * 50,
   });
 
   if (error) return <div>Error: {error.message}</div>;

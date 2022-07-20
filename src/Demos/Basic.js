@@ -1,7 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-
-const fetchCatPhoto = () =>
-  fetch('https://api.thecatapi.com/v1/images/search').then((res) => res.json());
+import { fetchCatPhoto } from './api';
 
 const Basic = () => {
   const { isLoading, error, data } = useQuery(['cat-photo'], fetchCatPhoto);
