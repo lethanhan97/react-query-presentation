@@ -5,6 +5,7 @@ import { Solution } from './03-solution';
 import { Pagination } from './05-pagination';
 import { Caching } from './06-caching';
 import { OtherFeatures } from './07-other-features';
+import { ClosingRemarks } from './08-closing-remarks';
 
 const Pages = [
   {
@@ -34,6 +35,10 @@ const Pages = [
   {
     name: 'OtherFeatures',
     Component: OtherFeatures,
+  },
+  {
+    name: 'ClosingRemarks',
+    Component: ClosingRemarks,
   },
 ];
 
