@@ -3,6 +3,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 import Home from './Home';
 import Pagination from './Pagination';
 import Caching from './Caching';
+import ReadingMaterials from './ReadingMaterials';
 
 const DemoPages = [
   {
@@ -24,6 +25,11 @@ const DemoPages = [
     route: '/caching',
     navDisplay: 'Caching',
     Component: Caching,
+  },
+  {
+    route: '/reading-materials',
+    navDisplay: 'Reading Materials',
+    Component: ReadingMaterials,
   },
 ];
 

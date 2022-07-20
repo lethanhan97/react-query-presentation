@@ -50,6 +50,10 @@ export const ClosingRemarks = () => {
           anymore
         </p>
       </section>
+      <section>
+        <h2>The End</h2>
+        <p>Discussion time</p>
+      </section>
     </>
   );
 };
